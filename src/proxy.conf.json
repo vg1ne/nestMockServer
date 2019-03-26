@@ -1,0 +1,55 @@
+{
+  "/cloud/magnet/api/1.0/CateringOrders/*": {
+    "target": "http://localhost:3000",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "pathRewrite": { "^/cloud/magnet/api/1.0/": "" }
+  },
+  "/cloud/concierge/api/1.0/CateringOrders/*": {
+    "target": "http://localhost:3000",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "pathRewrite": { "^/cloud/magnet/api/1.0/": "" }
+  },
+    "/dist/prod/assets/*": {
+        "target": "https://qmagnetcloud.deloitte.com",
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug"
+    },
+    "/cloud/*": {
+        "target": "https://qhotelingapicloud.deloitte.com",
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug",
+        "pathRewrite": { "^/cloud/": "/" }
+    },
+    "/on-premise/*": {
+        "target": "https://qspacemanagementservices.deloitte.com",
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug",
+        "pathRewrite": { "^/on-premise/": "/" }
+    },
+    "/vc/*": {
+        "target": "https://qmagnetvcservices.deloitte.com",
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug",
+        "pathRewrite": { "^/vc/": "/" }
+    },
+    "/api/*": {
+        "target": "https://qmagnet.deloitte.com",
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug"
+    },
+    "/hoteling/*": {
+        "target": "https://qhotelingservices.deloitte.com",
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug"
+    }
+}
